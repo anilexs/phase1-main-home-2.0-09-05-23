@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/formulaire.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+
+    <nav>
+      <ul>
+        <li><a href="./balise.html" target="_blank">balises</a></li>
+        <li><a href="./index.html">index</a></li>
+        <li><a href="./emmet.html">emmet</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+      <form action="./index.html" method="get" class="for1">
+        <label for="Pseudonyme" class="pse">Pseudonyme <span style="color: red;" title="Obligatoire">*</span></label><input type="text" placeholder="Pseudonyme" id="Pseudonyme" class="Pseud" required/><br>
+
+        <label for="Mot de passe *" class="pse">mots de passe</label><input type="text" placeholder="Mot de passe *" id="Mot de passe *" required /><br>
+
+        <label for="email" class="pse">email</label><input type="text" placeholder="email" id="email" required/><br>
+
+        <label for="fichiet" class="pse">photo</label><input type="file" name="myfil">
+        <fieldset>
+        <legend>Choix multiples</legend>
+        <label for="destination" class="spac">Quelle destination <br> choisissez-vous ?</label><input type="checkbox" id="des1" name="des1" value="Italie"><label for="des1">Italie</label><input type="checkbox" id="des2" name="des2" value="Tunisie" ><label for="des2">Tunisie</label><input type="checkbox" id="des3" name="des3" value="Espagne"><label for="des3">Espagne</label><br><br>
+        <label for="accompagnateurs" class="spac">Qui seront vos <br> accompagnateurs ?</label><input type="radio" id="ac1" name="fav_ac" value="famille"><label for="ac1">En Famille</label><input type="radio" name="fav_ac" id="ac2" value="amie"><label for="ac2">Entre amis</label><input type="radio" name="fav_ac" id="ac3" value="solo"><label for="ac3">Solo</label>
+      </fieldset>
+      <br><label for="textpanel" class="pse" style="vertical-align: top;">Commentaires</label> <textarea name="textpanel" id="textpanel" cols="30" rows="10"></textarea><br>
+      <input type="submit" value="Submit">
+      <input type="reset" name="annuler" value="Annuler">
+      </form>
+      
+    </main>
+  </body>
+</html>
